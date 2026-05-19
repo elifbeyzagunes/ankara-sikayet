@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Ankara Şikayet",
+    "slug": "ankara-sikayet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0f0f1a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ankara.sikayet",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Şikayetinizin konumunu belirlemek için konum erişimi gereklidir."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f0f1a"
+      },
+      "package": "com.ankara.sikayet",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Şikayetinizin konumunu belirlemek için konum erişimi gereklidir."
+        }
+      ]
+    ]
+  }
+}
